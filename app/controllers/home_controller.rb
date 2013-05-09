@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
   def index
-    @host = self.request.host
+    @host = `hostname`
   end
 end
